@@ -1,6 +1,6 @@
 {
   "name": "dsh-memory-local",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local-only cross-session memory for DSH with tools, system-prompt injection, and a Settings page.",
   "type": "module",
   "main": "index.js",

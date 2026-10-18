@@ -1,0 +1,5 @@
+# DSH memory bundle: one Host row. The client half is declared by dsh.client.
+- insert:
+    - id: memory-local
+      name: dsh-memory-local
+      config: {}

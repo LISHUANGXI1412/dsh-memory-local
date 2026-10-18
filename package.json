@@ -1,0 +1,60 @@
+{
+  "name": "dsh-memory-local",
+  "version": "0.1.0",
+  "description": "Local-only cross-session memory for DSH with tools, system-prompt injection, and a Settings page.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LISHUANGXI1412/dsh-memory-local"
+  },
+  "homepage": "https://github.com/LISHUANGXI1412/dsh-memory-local#readme",
+  "bugs": {
+    "url": "https://github.com/LISHUANGXI1412/dsh-memory-local/issues"
+  },
+  "author": "dsh-memory-local contributors",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "long-term-memory",
+    "agent",
+    "local-first"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/**",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-connection"
+      ]
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.2"
+  }
+}

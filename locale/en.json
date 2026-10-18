@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local Memory",
+    "description": "Local-only cross-session memory with system-prompt injection and a Settings page for project and global memories."
+  }
+}

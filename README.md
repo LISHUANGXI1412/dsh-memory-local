@@ -2,6 +2,8 @@
 
 Local-only cross-session memory for DeepSeek Harness.
 
+Current version: `0.1.1`, published on npm as `dsh-memory-local`.
+
 - Agent tools: `memory_remember`, `memory_recall`, `memory_list`, `memory_forget`,
   `memory_inspect`.
 - Relevant entries are injected into the system prompt as a bounded local-memory
